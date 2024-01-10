@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ##d9480f */
+html {
+  font-size: 62.5%;
+}
+nav {
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to top, #d9480fbb, rgba(0, 0, 0, 0.863)),
+    url(images/kampala.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+nav ul li {
+  display: inline-block;
+  padding-left: 1.8rem;
+  list-style: none;
+}
+nav ul li a {
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+.home {
+  background-image: linear-gradient(to top, #d9480fbb, rgba(0, 0, 0, 0.863)),
+    url(images/kampala.jpg);
+  height: 90rem;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 99% 86%, 0% 100%);
+}
+.home-content {
+  width: 50%;
+
+  height: 100%;
+  padding: 30rem 5rem;
+  color: #fff;
+}
+.home-text {
+  font-size: 2.6rem;
+  font-weight: 200;
+  position: relative;
+  display: inline-block;
+}
+.home-text::after {
+  position: absolute;
+  content: '110$';
+  color: rgba(0, 128, 0, 0.877);
+  top: -3.7rem;
+  right: -6rem;
+  font-size: 4.2rem;
+  font-weight: 900;
+}
