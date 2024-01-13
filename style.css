@@ -242,3 +242,97 @@ nav ul li a:hover::after {
 .btn:hover {
   background-color: #d9480fb7;
 }
+
+/* Experiance */
+.row {
+  max-width: 110rem;
+  background-color: #d9480f;
+  margin: 2rem auto;
+  padding: 5rem 6rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3rem;
+  border-radius: 3rem;
+  box-shadow: 0 0 1rem black;
+}
+.experiance-text {
+  font-size: 2.6rem;
+  margin-bottom: 1.6rem;
+}
+.experiance-p {
+  font-size: 1.8rem;
+  width: 30rem;
+  line-height: 1.2;
+}
+.experiance-text-last {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+/* About */
+.about {
+  text-align: center;
+  padding: 7rem 3rem;
+}
+.about-title {
+  font-size: 2.6rem;
+  margin-bottom: 1.6rem;
+  font-weight: 900;
+}
+.about-p {
+  font-size: 1.8rem;
+  font-weight: 900;
+  line-height: 1.2;
+}
+.about-us {
+  margin: 3rem auto;
+  background-image: linear-gradient(
+      105deg,
+      #d9480fcb 0%,
+      #d9480fcb 65%,
+      transparent 35%
+    ),
+    url(images/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 3rem;
+  padding: 10rem 8rem;
+  max-width: 110rem;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 3rem;
+}
+.about-1 {
+  width: 30rem;
+}
+
+.about-1 a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+
+  column-gap: 0.9rem;
+}
+.about-1 .icon {
+  font-size: 1.8rem;
+  color: #d9480f;
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+.about-1 .icon:hover {
+  transform: scale(1.2);
+  background-color: #d9480f;
+  color: #fff;
+}
+
+.about-1 li {
+  list-style: none;
+  margin-bottom: 1.3rem;
+}
