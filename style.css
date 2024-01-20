@@ -4,14 +4,22 @@
   box-sizing: border-box;
 }
 body {
+  padding: 3rem;
+
+  /* overflow-x: hidden; */
+}
+div {
+  overflow: hidden;
+  width: 100%;
+  object-fit: contain;
 }
 /* ##d9480f */
 html {
   font-size: 62.5%;
 }
 nav {
-  padding: 2rem;
-
+  padding: 2.6rem;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -20,6 +28,7 @@ nav {
   background-size: cover;
   color: #fff;
   text-transform: uppercase;
+  border-radius: 1rem;
 }
 
 nav ul li {
@@ -56,7 +65,9 @@ nav ul li a:hover::after {
   background-size: cover;
   /* background-repeat: no-repeat; */
   background-position: top;
-  width: 100%;
+
+  margin-top: -1rem;
+  border-radius: 0.6rem;
   padding-bottom: 80rem;
   /* overflow: hidden; */
 
@@ -65,7 +76,7 @@ nav ul li a:hover::after {
 .home-content {
   color: #fff;
   width: 100%;
-  max-width: 90rem;
+  /* max-width: 90rem; */
   margin: 0 auto;
   text-align: center;
   padding: 10rem 0;
@@ -282,44 +293,86 @@ nav ul li a:hover::after {
   font-weight: 900;
 }
 .about-p {
-  font-size: 1.8rem;
-  font-weight: 900;
-  line-height: 1.2;
+  font-size: 2.2rem;
+  font-weight: 100;
+  line-height: 1.4;
 }
 .about-us {
+  position: relative;
   margin: 3rem auto;
   background-image: linear-gradient(
       105deg,
-      #d9480fcb 0%,
-      #d9480fcb 65%,
-      transparent 35%
+      #d9480f8e 0%,
+      #f33606cb 55%,
+      transparent 55%
     ),
     url(images/about-bg.jpg);
   background-size: cover;
   background-position: center;
   border-radius: 3rem;
-  padding: 10rem 8rem;
+  padding: 5rem 8rem;
   max-width: 110rem;
   color: #fff;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 3rem;
+  height: 40rem;
+  /* display: grid;
+  grid-template-columns: repeat(4, 1fr); */
 }
-.about-1 {
-  width: 30rem;
+.about-1-section {
+  width: 50%;
+  margin-top: 9rem;
 }
+.contact-links {
+  width: 50%;
 
+  position: absolute;
+  top: 40%;
+}
+.hide {
+  display: none;
+}
+/* .about-1 {
+  width: 40rem;
+} */
+.btn-fun {
+  background-color: rgba(30, 143, 255, 0.699);
+
+  position: absolute;
+  top: 1.6rem;
+  left: 5%;
+  transition: all 0.3s;
+}
+.btn-fun:hover {
+  background-color: rgba(30, 143, 255, 0.699);
+  transform: translateY(-1rem);
+}
+.btn-contact {
+  background-color: rgba(0, 128, 0, 0.836);
+
+  position: absolute;
+  top: 1.6rem;
+  left: 35%;
+}
+.btn-contact:hover {
+  background-color: rgba(0, 128, 0, 0.836);
+  transform: translateY(-1rem);
+}
 .about-1 a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
-
+  transition: all 0.2s;
   column-gap: 0.9rem;
+  letter-spacing: 1;
+}
+.about-1 a:hover {
+  color: dodgerblue;
+  transform: translateY(-0.2rem);
+  font-size: 1.9rem;
 }
 .about-1 .icon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #d9480f;
   background-color: #fff;
   padding: 0.5rem;

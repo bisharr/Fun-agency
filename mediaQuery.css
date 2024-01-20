@@ -1,0 +1,31 @@
+/* 4 devices */
+/* tab-port = 900px, tab-land = 1200px, and phone = 600px */
+/* Also we using em unit our media query */
+/* To convert the px to em we will devide 16 by the measure we want for example for phones we want 600px 
+and we will say 600/16 = 37.5em */
+
+/* Our font-size default was 62.5% comes from 1rem = 10/16*100 =  62.5% and every every 1rem was 10px  */
+
+/*  ****************our media Queries**************** */
+
+/* tab-land 1200/16 = 75em */
+@media (max-width: 75em) {
+  html {
+    /* 1rem = 9px ,9/16*100 = 56.25% */
+    font-size: 56.25%;
+  }
+}
+
+/* tab-port 900/16= 56.25em */
+@media (max-width: 56.25em) {
+  html {
+    /* 1rem = 8px, 8/16px*100 = 50% */
+    font-size: 50%;
+  }
+}
+/* phones 600/16 = 37.5em */
+@media (max-width: 37.5em) {
+  html {
+    font-size: ;
+  }
+}
