@@ -22,3 +22,68 @@ btnFun.addEventListener('click', function () {
   btnContact.style.transform = 'translateY(0)';
   btnContact.style.backgroundColor = 'rgba(0, 128, 0, 0.836)';
 });
+
+// Dates*************
+const monthEl = document.querySelector('.month');
+const yearEL = document.querySelector('.year');
+const dayEL = document.querySelector('.day');
+const dayNumEL = document.querySelector('.day-num');
+const watchEl = document.querySelector('.whatch');
+
+const monthArry = [
+  'January',
+  'Feb',
+  'Mar',
+  'Apr',
+  'May',
+  'June',
+  'July',
+  'Aug',
+  'Sep',
+  'Oct',
+  'Nov',
+  'Dec',
+];
+const daysArray = [
+  'Isniin',
+  'Talaado',
+  'Arbaco',
+  'Khamiis',
+  'Jimco',
+  'Sabti',
+  'Axad',
+];
+function Dates() {
+  let fullDate = new Date();
+
+  let month = monthArry[fullDate.getMonth() * 1];
+  let days = daysArray[fullDate.getDay() - 1];
+  console.log(fullDate.getDay());
+
+  yearEL.innerHTML = fullDate.getFullYear();
+  monthEl.innerHTML = month;
+  dayEL.innerHTML = days;
+  dayNumEL.innerHTML = fullDate.getDate();
+
+  //whatch
+
+  let currentWatch = `${
+    fullDate.getHours() < 10 ? '0' + fullDate.getHours() : fullDate.getHours()
+  }:${
+    fullDate.getMinutes() < 10
+      ? '0' + fullDate.getMinutes()
+      : fullDate.getMinutes()
+  }:${
+    fullDate.getSeconds() < 10
+      ? '0' + fullDate.getSeconds()
+      : fullDate.getSeconds()
+  } ${fullDate.getHours() < 12 ? 'AM' : 'PM'}`;
+
+  watchEl.innerHTML = currentWatch;
+
+  setInterval(() => {
+    Dates();
+  }, 1000);
+}
+
+Dates();

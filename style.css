@@ -24,7 +24,7 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(to top, #d9480fbb, rgba(0, 0, 0, 0.863)),
-    url(images/kampala.jpg);
+    url(images/kampala2x.jpg);
   background-size: cover;
   color: #fff;
   text-transform: uppercase;
@@ -386,4 +386,15 @@ nav ul li a:hover::after {
 .about-1 li {
   list-style: none;
   margin-bottom: 1.3rem;
+}
+
+/* foor */
+
+.dates-span {
+  font-size: 3rem;
+  margin-left: 1.4rem;
+}
+.whatch {
+  margin-top: 3rem;
+  font-size: 4rem;
 }
