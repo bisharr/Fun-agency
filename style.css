@@ -468,13 +468,14 @@ nav ul li a:hover::after {
   margin: 5rem auto;
   max-width: 62rem;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.269);
-  /* background-color: red; */
+
   border-radius: 0.6rem;
 }
 .question {
   padding: 1.5rem 1.5rem 0 1.5rem;
-  margin-bottom: 2rem;
-  /* background-color: green; */
+  margin: auto 0;
+
+  margin-bottom: 1rem;
 }
 .question-title {
   display: flex;
@@ -486,7 +487,7 @@ nav ul li a:hover::after {
   font-weight: bolder;
   font-size: 2.4rem;
 }
-.question-button {
+.question-btn {
   font-size: 1.5rem;
   background: transparent;
   color: #d9480f;
@@ -501,4 +502,19 @@ nav ul li a:hover::after {
   border-top: 0.15rem solid #d9480fe1;
   margin-top: 1.7rem;
   padding: 1rem 0;
+}
+.question-text,
+.minus-icon {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
 }
