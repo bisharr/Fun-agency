@@ -4,8 +4,6 @@ const btnFun = document.querySelector('.btn-fun');
 const aboutHistory = document.querySelector('.about-1-section');
 const aboutLinks = document.querySelector('.contact-links');
 
-console.log(btnContact, btnFun, aboutHistory, aboutLinks);
-
 btnContact.addEventListener('click', function () {
   aboutHistory.classList.add('hide');
   aboutLinks.classList.remove('hide');
@@ -58,7 +56,6 @@ function Dates() {
 
   let month = monthArry[fullDate.getMonth() * 1];
   let days = daysArray[fullDate.getDay() - 1];
-  console.log(fullDate.getDay());
 
   yearEL.innerHTML = fullDate.getFullYear();
   monthEl.innerHTML = month;
@@ -91,3 +88,13 @@ function Dates() {
 }
 
 Dates();
+
+//Q and A section
+const questions = document.querySelectorAll('.question');
+
+questions.forEach((question) => {
+  const btn = question.querySelector('.question-btn');
+  btn.addEventListener('click', () => {
+    question.classList.toggle('show-text');
+  });
+});
