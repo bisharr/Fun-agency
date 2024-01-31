@@ -5,9 +5,11 @@
 }
 body {
   padding: 3rem;
+  font-family: 'Inter' sans-serif;
 
   /* overflow-x: hidden; */
 }
+
 div {
   overflow: hidden;
   width: 100%;
@@ -417,6 +419,8 @@ nav ul li a:hover::after {
 
 .testimonials-content {
   background-color: rgb(230, 220, 220);
+  /* background-color: #ebebeb; */
+
   position: relative;
 
   padding: 5rem 2rem;
@@ -445,10 +449,56 @@ nav ul li a:hover::after {
   height: 10rem;
   border-radius: 50%;
   text-align: center;
-  border: 0.6rem solid rgb(240, 237, 237);
+  border: 0.8rem solid rgb(240, 237, 237);
   position: absolute;
   left: 50%;
   top: 0;
   z-index: 2000;
   transform: translate(-50%, 0);
+}
+
+/* question and answers */
+
+/* #ebebeb */
+.question p {
+  margin-bottom: 1.3rem;
+}
+.div-center {
+  /* width: 90vw; */
+  margin: 5rem auto;
+  max-width: 62rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.269);
+  /* background-color: red; */
+  border-radius: 0.6rem;
+}
+.question {
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+  /* background-color: green; */
+}
+.question-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.question-title p {
+  color: #d9480f;
+  font-weight: bolder;
+  font-size: 2.4rem;
+}
+.question-button {
+  font-size: 1.5rem;
+  background: transparent;
+  color: #d9480f;
+  border-color: transparent;
+  cursor: pointer;
+  font-size: 2.4rem;
+}
+
+.question-text p {
+  color: grey;
+  font-size: 2.2rem;
+  border-top: 0.15rem solid #d9480fe1;
+  margin-top: 1.7rem;
+  padding: 1rem 0;
 }

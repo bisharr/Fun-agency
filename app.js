@@ -81,9 +81,13 @@ function Dates() {
 
   watchEl.innerHTML = currentWatch;
 
-  setInterval(() => {
+  setInterval(function () {
     Dates();
   }, 1000);
+
+  // setInterval(() => {
+  //   Dates();
+  // }, 1000);
 }
 
 Dates();
