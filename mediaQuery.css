@@ -26,6 +26,6 @@ and we will say 600/16 = 37.5em */
 /* phones 600/16 = 37.5em */
 @media (max-width: 37.5em) {
   html {
-    font-size: ;
+    font-size: 43.7%;
   }
 }

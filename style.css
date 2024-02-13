@@ -458,6 +458,9 @@ nav ul li a:hover::after {
 }
 
 /* question and answers */
+.duty {
+  margin-top: 5rem;
+}
 
 /* #ebebeb */
 .question p {
@@ -519,4 +522,72 @@ nav ul li a:hover::after {
 
 .show-text .plus-icon {
   display: none;
+}
+
+/* footer */
+
+.footer {
+  padding: 3rem 4rem;
+}
+
+.footer--content {
+  display: flex;
+  max-width: 110rem;
+  margin-left: 9rem;
+
+  /* margin: 0 auto; */
+}
+.footer-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  letter-spacing: 0.13rem;
+}
+.col-company li a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+.col-company li a:hover {
+  font-size: 1.6rem;
+  color: #d9480f;
+}
+
+.col-media li a {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 400;
+  transition: all 0.4s;
+}
+.col-media li a:hover {
+  font-size: 1.6rem;
+  color: #d9480f;
+}
+.footer-form {
+  position: relative;
+  width: 60%;
+}
+.footer-form input {
+  width: 100%;
+  padding: 0.6rem 0rem;
+  outline: none;
+  /* border-radius: 0.3rem; */
+}
+.footer-form button {
+  position: absolute;
+  border: none;
+  height: 100%;
+  color: white;
+  padding: 0.2rem 1rem;
+  background-color: dodgerblue;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  right: 0;
 }
