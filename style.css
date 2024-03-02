@@ -318,18 +318,21 @@ nav ul li a:hover::after {
   max-width: 110rem;
   color: #fff;
   height: 40rem;
+  transition: all 0.4s;
   /* display: grid;
   grid-template-columns: repeat(4, 1fr); */
 }
 .about-1-section {
   width: 50%;
   margin-top: 9rem;
+  transition: all 0.4s;
 }
 .contact-links {
   width: 50%;
 
   position: absolute;
   top: 40%;
+  transition: all 0.4s;
 }
 .hide {
   display: none;
@@ -393,15 +396,6 @@ nav ul li a:hover::after {
 }
 
 /* foor */
-
-.dates-span {
-  font-size: 3rem;
-  margin-left: 1.4rem;
-}
-.whatch {
-  margin-top: 3rem;
-  font-size: 4rem;
-}
 
 /* Testimonials */
 .testimonials {
@@ -507,6 +501,7 @@ nav ul li a:hover::after {
   border-top: 0.15rem solid #d9480fe1;
   margin-top: 1.7rem;
   padding: 1rem 0;
+  transition: all 0.4s;
 }
 .question-text,
 .minus-icon {
@@ -590,4 +585,41 @@ nav ul li a:hover::after {
   cursor: pointer;
   border-radius: 0.3rem;
   right: 0;
+}
+.contacts {
+  font-size: 1.3rem;
+}
+.contacts a {
+  color: black;
+  font-size: 1.4rem;
+  display: inline-block;
+  margin-top: 0.7rem;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+/* dates */
+.dates-span {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+.whatch {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+.date-content span {
+  display: none;
+  align-items: center;
+}
+.date-content {
+  display: flex;
+  align-items: center;
+  /* max-width: 40rem; */
+  /* margin: 0 auto; */
+}
+.dates {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
