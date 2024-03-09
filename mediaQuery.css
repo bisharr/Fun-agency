@@ -9,6 +9,7 @@ and we will say 600/16 = 37.5em */
 /*  ****************our media Queries**************** */
 
 /* tab-land 1200/16 = 75em */
+/* //hey */
 @media (max-width: 75em) {
   html {
     /* 1rem = 9px ,9/16*100 = 56.25% */
