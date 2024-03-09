@@ -98,3 +98,12 @@ questions.forEach((question) => {
     question.classList.toggle('show-text');
   });
 });
+
+//
+const fulldate = document.querySelector('.full-date');
+
+let newDate = new Date();
+let month = `${newDate.getMonth() + 1}`.padStart(2, 0);
+let date = `${newDate.getDate()}`.padStart(2, 0);
+let year = newDate.getFullYear();
+fulldate.textContent = `${month}/${date}/${year}`;

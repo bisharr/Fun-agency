@@ -18,6 +18,7 @@ div {
 /* ##d9480f */
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 nav {
   padding: 2.6rem;
@@ -522,7 +523,10 @@ nav ul li a:hover::after {
 /* footer */
 
 .footer {
-  padding: 3rem 4rem;
+  padding: 3rem;
+  background-color: #333333d7;
+  color: white;
+  border-radius: 1.2rem;
 }
 
 .footer--content {
@@ -533,7 +537,7 @@ nav ul li a:hover::after {
   /* margin: 0 auto; */
 }
 .footer-title {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   margin-bottom: 1rem;
   font-weight: 200;
   letter-spacing: 0.13rem;
@@ -542,13 +546,13 @@ nav ul li a:hover::after {
   display: inline-block;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
+  color: white;
+  font-size: 1.6rem;
   font-weight: 400;
   transition: all 0.4s;
 }
 .col-company li a:hover {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #d9480f;
 }
 
@@ -556,13 +560,13 @@ nav ul li a:hover::after {
   display: inline-block;
   margin-bottom: 0.5rem;
   text-decoration: none;
-  color: black;
-  font-size: 1.4rem;
+  color: white;
+  font-size: 1.6rem;
   font-weight: 400;
   transition: all 0.4s;
 }
 .col-media li a:hover {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #d9480f;
 }
 .footer-form {
@@ -587,10 +591,10 @@ nav ul li a:hover::after {
   right: 0;
 }
 .contacts {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
 }
 .contacts a {
-  color: black;
+  color: white;
   font-size: 1.4rem;
   display: inline-block;
   margin-top: 0.7rem;
@@ -605,21 +609,22 @@ nav ul li a:hover::after {
 }
 .whatch {
   margin-top: 3rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+}
+.full-date {
+  text-align: center;
+  font-size: 2.2rem;
 }
 .date-content span {
   display: none;
   align-items: center;
 }
 .date-content {
-  display: flex;
-  align-items: center;
-  /* max-width: 40rem; */
-  /* margin: 0 auto; */
 }
 .dates {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 3rem;
 }

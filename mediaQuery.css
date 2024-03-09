@@ -14,6 +14,13 @@ and we will say 600/16 = 37.5em */
     /* 1rem = 9px ,9/16*100 = 56.25% */
     font-size: 56.25%;
   }
+  .home-text {
+    font-size: 5rem;
+  }
+  .home-text::after {
+    font-size: 4.5rem;
+    right: 1rem;
+  }
 }
 
 /* tab-port 900/16= 56.25em */
@@ -21,6 +28,10 @@ and we will say 600/16 = 37.5em */
   html {
     /* 1rem = 8px, 8/16px*100 = 50% */
     font-size: 50%;
+  }
+  .testimonial-div {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2rem;
   }
 }
 /* phones 600/16 = 37.5em */
