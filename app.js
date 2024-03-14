@@ -107,3 +107,14 @@ let month = `${newDate.getMonth() + 1}`.padStart(2, 0);
 let date = `${newDate.getDate()}`.padStart(2, 0);
 let year = newDate.getFullYear();
 fulldate.textContent = `${month}/${date}/${year}`;
+
+//scrolling with out using html css
+document.querySelectorAll('.nav--links').forEach(function (value) {
+  value.addEventListener('click', function (e) {
+    console.log('links');
+    e.preventDefault();
+    const id = this.getAttribute('href');
+    console.log(id);
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  });
+});
