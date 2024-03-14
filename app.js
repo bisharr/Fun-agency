@@ -109,12 +109,22 @@ let year = newDate.getFullYear();
 fulldate.textContent = `${month}/${date}/${year}`;
 
 //scrolling with out using html css
-document.querySelectorAll('.nav--links').forEach(function (value) {
-  value.addEventListener('click', function (e) {
-    console.log('links');
-    e.preventDefault();
-    const id = this.getAttribute('href');
-    console.log(id);
+// document.querySelectorAll('.nav--links').forEach(function (value) {
+//   value.addEventListener('click', function (e) {
+//     console.log('links');
+//     e.preventDefault();
+//     const id = this.getAttribute('href');
+//     console.log(id);
+//     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+//   });
+// });
+
+document.querySelector('.nav__ul-link').addEventListener('click', function (e) {
+  e.preventDefault();
+  console.log(e.target);
+  if (e.target.classList.contains('nav--links')) {
+    const id = e.target.getAttribute('href');
+    //     console.log(id);
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
-  });
+  }
 });
