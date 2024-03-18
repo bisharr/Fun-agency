@@ -128,3 +128,24 @@ document.querySelector('.nav__ul-link').addEventListener('click', function (e) {
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+//emplementing hover links
+const nav = document.querySelector('.nav');
+const mouseHandler = function (e) {
+  if (e.target.classList.contains('nav--links')) {
+    const link = e.target;
+    console.log(link);
+    const siblings = link.closest('.nav').querySelectorAll('.nav--links');
+    const logo = link.closest('.nav').querySelector('h2');
+
+    siblings.forEach((el) => {
+      if (el !== link) {
+        el.style.opacity = this;
+      }
+    });
+    logo.style.opacity = this;
+  }
+};
+
+nav.addEventListener('mouseover', mouseHandler.bind(0.5));
+nav.addEventListener('mouseout', mouseHandler.bind(1));
