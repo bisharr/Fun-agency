@@ -509,7 +509,7 @@ nav ul li a:hover::after {
   display: none;
 }
 .question-text {
-  transform: translateY(-110%);
+  transform: translateY(-100%);
   opacity: 0;
   transition: none;
   height: 0;
@@ -518,7 +518,7 @@ nav ul li a:hover::after {
 .show-text .question-text {
   transform: translateY(0);
   opacity: 1;
-  transition: all 0.8s;
+  transition: all 0.7s ease-in;
 
   height: 100%;
 }
