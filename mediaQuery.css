@@ -15,6 +15,12 @@ and we will say 600/16 = 37.5em */
     /* 1rem = 9px ,9/16*100 = 56.25% */
     font-size: 56.25%;
   }
+  body {
+    padding: 0;
+  }
+  nav {
+    border-radius: 0;
+  }
   .home-text {
     font-size: 5rem;
   }
@@ -30,6 +36,7 @@ and we will say 600/16 = 37.5em */
     /* 1rem = 8px, 8/16px*100 = 50% */
     font-size: 50%;
   }
+
   .testimonial-div {
     grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;

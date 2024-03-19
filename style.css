@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  padding: 3rem;
+  padding: 2rem;
   font-family: 'Inter' sans-serif;
 
   /* overflow-x: hidden; */
@@ -32,6 +32,17 @@ nav {
   color: #fff;
   text-transform: uppercase;
   border-radius: 1rem;
+}
+.sticky {
+  padding: 2.6rem;
+  position: fixed;
+  background-image: none;
+  background-color: #d9480fd0;
+  color: white;
+  width: 97%;
+  z-index: 20000;
+  overflow: hidden;
+  margin-top: -1.7rem;
 }
 
 nav ul li {

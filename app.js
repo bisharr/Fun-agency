@@ -149,3 +149,20 @@ const mouseHandler = function (e) {
 
 nav.addEventListener('mouseover', mouseHandler.bind(0.5));
 nav.addEventListener('mouseout', mouseHandler.bind(1));
+
+//sticky navigation
+const navHeight = nav.getBoundingClientRect().height;
+const homeDive = document.querySelector('#home');
+const navSticky = function (entries) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) nav.classList.add('sticky');
+  else nav.classList.remove('sticky');
+};
+
+const homeObserver = new IntersectionObserver(navSticky, {
+  root: null,
+  threshold: 0,
+  rootMargin: `-${navHeight}px`,
+});
+
+homeObserver.observe(homeDive);
