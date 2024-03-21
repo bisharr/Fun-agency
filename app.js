@@ -166,3 +166,24 @@ const homeObserver = new IntersectionObserver(navSticky, {
 });
 
 homeObserver.observe(homeDive);
+
+//revealing sections in smooth transition
+
+const allsection = document.querySelectorAll('.sections');
+
+const revealingSections = function (entries, observe) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('section--hidden');
+  observe.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealingSections, {
+  root: null,
+  threshold: 0.15,
+});
+
+allsection.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add('section--hidden');
+});

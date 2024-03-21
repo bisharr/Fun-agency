@@ -9,6 +9,16 @@ body {
 
   /* overflow-x: hidden; */
 }
+/* small javascriptcode */
+.sections {
+  padding: 15rem 3rem;
+
+  transition: transform 2s, opacity 1s;
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
 
 div {
   overflow: hidden;
@@ -253,6 +263,9 @@ nav ul li a:hover::after {
   margin-bottom: 1.4rem;
   border-bottom: 0.1rem solid #d9480fc4;
 }
+.lazy-img {
+  filter: blur(1.5rem);
+}
 .btn {
   background-color: #d9480f;
   border: none;
@@ -271,6 +284,8 @@ nav ul li a:hover::after {
 }
 
 /* Experiance */
+.sections {
+}
 .row {
   max-width: 110rem;
   background-color: #d9480f;
