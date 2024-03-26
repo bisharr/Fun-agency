@@ -47,4 +47,28 @@ and we will say 600/16 = 37.5em */
   html {
     font-size: 43.7%;
   }
+  .testimonial-div {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 2rem;
+  }
+  .container-service {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 44rem;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+  .row {
+    max-width: 45rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5rem;
+  }
+  .btn-contact {
+    left: 45%;
+  }
+  .contact-links,
+  .about-1-section {
+    width: 70%;
+  }
 }

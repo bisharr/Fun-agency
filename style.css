@@ -226,6 +226,7 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(2, 1fr);
   padding: 0 2rem 2rem 8rem;
 }
+
 .col-1 {
   width: 32rem;
   padding: 0 0 3rem 0;
@@ -263,9 +264,7 @@ nav ul li a:hover::after {
   margin-bottom: 1.4rem;
   border-bottom: 0.1rem solid #d9480fc4;
 }
-.lazy-img {
-  filter: blur(1.5rem);
-}
+
 .btn {
   background-color: #d9480f;
   border: none;
