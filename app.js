@@ -130,7 +130,7 @@ document.querySelector('.nav__ul-link').addEventListener('click', function (e) {
 });
 
 //emplementing hover links
-const nav = document.querySelector('.nav');
+const nav = document.querySelector('nav');
 const mouseHandler = function (e) {
   if (e.target.classList.contains('nav--links')) {
     const link = e.target;
@@ -208,3 +208,16 @@ const omgobserve = new IntersectionObserver(loading, {
 imgtargets.forEach((img) => omgobserve.observe(img));
 
 console.log(imgtargets);
+
+//remong sticky element
+
+const resizeFun = function () {
+  const windowWidth = window.innerWidth;
+
+  if (windowWidth <= 600) {
+    nav.classList.remove('sticky');
+    console.log('hello sticky');
+  }
+};
+window.addEventListener('resize', resizeFun);
+resizeFun();

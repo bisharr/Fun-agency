@@ -71,4 +71,15 @@ and we will say 600/16 = 37.5em */
   .about-1-section {
     width: 70%;
   }
+  body {
+    position: relative;
+  }
+  nav {
+    position: fixed;
+    flex-direction: column;
+    width: 30%;
+    top: 0;
+    left: 5rem;
+    z-index: 3000;
+  }
 }
