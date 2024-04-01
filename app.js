@@ -216,8 +216,51 @@ const resizeFun = function () {
 
   if (windowWidth <= 600) {
     nav.classList.remove('sticky');
-    console.log('hello sticky');
   }
 };
 window.addEventListener('resize', resizeFun);
 resizeFun();
+
+//Span numbers counter
+
+const counterSpans = document.querySelectorAll('.spanunter');
+
+const counterFunc = function () {
+  counterSpans.forEach((count) => {
+    count.innerHTML = '0';
+    incrementCouter();
+    function incrementCouter() {
+      let currentNumber = +count.innerHTML;
+      const dataCeil = count.getAttribute('data-ceil');
+      // const dataCeil = count.dataset.ceil;
+
+      const increment = dataCeil / 13;
+      currentNumber = Math.floor(currentNumber + increment);
+
+      if (currentNumber < dataCeil) {
+        count.innerHTML = `${new Intl.NumberFormat('US').format(
+          currentNumber
+        )}`;
+        setTimeout(incrementCouter, 700);
+      } else {
+        count.innerText = `${new Intl.NumberFormat('US').format(dataCeil)}`;
+      }
+    }
+  });
+};
+
+const expreience = document.querySelector('.experiance');
+const exp = function (entries) {
+  const [entry] = entries;
+  console.log(entry);
+  if (entry.isIntersecting) {
+    console.log('Expreince available');
+    counterFunc();
+  }
+};
+const observeExpreince = new IntersectionObserver(exp, {
+  root: null,
+  threshold: 0,
+});
+
+observeExpreince.observe(expreience);
