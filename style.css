@@ -21,14 +21,12 @@ body {
 }
 /* mobile nav */
 .menu {
+  display: none;
   font-size: 5.5rem;
   color: white;
   position: absolute;
   top: 2rem;
   left: 2rem;
-}
-.mobileHide {
-  display: none;
 }
 
 div {

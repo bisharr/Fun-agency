@@ -104,4 +104,10 @@ and we will say 600/16 = 37.5em */
     margin-top: 5rem;
     color: black;
   }
+  .menu {
+    display: block;
+  }
+  .mobileHide {
+    display: none;
+  }
 }
