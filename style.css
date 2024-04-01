@@ -294,8 +294,7 @@ nav ul li a:hover::after {
 }
 
 /* Experiance */
-.sections {
-}
+
 .row {
   max-width: 110rem;
   background-color: #d9480f;
@@ -669,8 +668,7 @@ nav ul li a:hover::after {
   display: none;
   align-items: center;
 }
-.date-content {
-}
+
 .dates {
   display: flex;
   align-items: center;
