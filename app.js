@@ -209,13 +209,15 @@ imgtargets.forEach((img) => omgobserve.observe(img));
 
 console.log(imgtargets);
 
-//remong sticky element
+//removing sticky element
 
 const resizeFun = function () {
   const windowWidth = window.innerWidth;
 
   if (windowWidth <= 600) {
+    console.log('sticky 600');
     nav.classList.remove('sticky');
+    nav.classList.add('navmeida');
   }
 };
 window.addEventListener('resize', resizeFun);
@@ -264,3 +266,18 @@ const observeExpreince = new IntersectionObserver(exp, {
 });
 
 observeExpreince.observe(expreience);
+
+//Mobile Navigation 600px
+const openNav = document.querySelector('.mobil-Open');
+const closeNav = document.querySelector('.mobile-close');
+
+openNav.addEventListener('click', function () {
+  nav.style.transform = 'translateX(0)';
+  this.classList.toggle('mobileHide');
+  closeNav.classList.toggle('mobileHide');
+});
+closeNav.addEventListener('click', function () {
+  nav.style.transform = 'translateX(-100%)';
+  this.classList.toggle('mobileHide');
+  openNav.classList.toggle('mobileHide');
+});

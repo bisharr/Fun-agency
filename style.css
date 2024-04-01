@@ -19,6 +19,17 @@ body {
   opacity: 0;
   transform: translateY(8rem);
 }
+/* mobile nav */
+.menu {
+  font-size: 5.5rem;
+  color: white;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+.mobileHide {
+  display: none;
+}
 
 div {
   overflow: hidden;
@@ -89,7 +100,7 @@ nav ul li a:hover::after {
   background-size: cover;
   /* background-repeat: no-repeat; */
   background-position: top;
-
+  position: relative;
   margin-top: -1rem;
   border-radius: 0.6rem;
   padding-bottom: 80rem;
