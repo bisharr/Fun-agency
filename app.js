@@ -88,6 +88,9 @@ function Dates() {
 }
 
 Dates();
+const lastYears = document.querySelector('.lastyears');
+let lastYear = new Date();
+lastYears.textContent = lastYear.getFullYear() - 2019;
 
 //Q and A section
 const questions = document.querySelectorAll('.question');
