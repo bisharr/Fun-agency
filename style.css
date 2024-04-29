@@ -462,14 +462,17 @@ nav ul li a:hover::after {
   letter-spacing: 1px;
   line-height: 1.3;
   display: inline-block;
+  text-align: center;
 }
 .testimonials-content span {
   font-size: 1.7rem;
   width: 100%;
   margin: 1.3rem auto;
   text-align: center;
-
+  text-transform: uppercase;
   display: inline-block;
+  margin-top: 3rem;
+  letter-spacing: 1.4px;
 }
 
 .testimonials-content-img {

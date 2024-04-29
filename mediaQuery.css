@@ -134,7 +134,7 @@ and we will say 600/16 = 37.5em */
     font-size: 2.5rem;
     font-weight: 900;
   }
-  .footer-form input {
-    width: 50%;
+  .footer-form {
+    width: 55%;
   }
 }

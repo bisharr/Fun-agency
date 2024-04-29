@@ -284,3 +284,11 @@ closeNav.addEventListener('click', function () {
   this.classList.toggle('mobileHide');
   openNav.classList.toggle('mobileHide');
 });
+
+allsection.forEach((section) => {
+  section.addEventListener('click', function () {
+    nav.style.transform = 'translateX(-100%)';
+    closeNav.classList.toggle('mobileHide');
+    openNav.classList.toggle('mobileHide');
+  });
+});
