@@ -11,6 +11,21 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaQuery.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      defer
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
     <title>Fun A Agency</title>
   </head>
   <body>
@@ -158,8 +173,8 @@
       <h1 class="title-text">Wax Naga Ogow</h1>
       <div class="about-us">
         <button class="btn btn-fun">Taarikdena Kaoban👇</button>
-        <button class="btn btn-contact ">Nala So Xirrir👇</button>
-        <div class="about-1 about-1-section ">
+        <button class="btn btn-contact">Nala So Xirrir👇</button>
+        <div class="about-1 about-1-section">
           <p class="about-p">
             Fun Agency Waxa la aas aasay 2019,Ujeedadeedu ay tahay anaga oo
             uadeegayna muwaadiniinta soomaaliyeed ufududaynta visaha wadanka
@@ -359,6 +374,32 @@
         </article>
       </div>
     </div>
+    <!-- map and conatct form -->
+    <div id="map"></div>
+    <div class="contact-form">
+      <div class="webform">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <h2>No soodir fariin emailka</h2>
+          <input
+            type="hidden"
+            name="access_key"
+            value="38a04918-220a-46af-b2aa-0c082ae0fb4e"
+          />
+
+          <input type="text" name="name" required placeholder="Magaca" />
+          <input
+            type="text"
+            name="Magalada"
+            required
+            placeholder="Magalada aad Joogtid"
+          />
+          <input type="text" name="Phone" required placeholder="Phone Number" />
+          <input type="email" name="email" required placeholder="Email" />
+          <textarea name="message" placeholder="massageka" required></textarea>
+          <button type="submit">DIR</button>
+        </form>
+      </div>
+    </div>
     <!-- footer -->
     <div id="contact" class="footer sections">
       <div class="footer--content">
@@ -412,14 +453,14 @@
         </div>
         <div class="col contacts">
           <h3 class="footer-title">Nagala Soo Xirrir👇</h3>
-          <form class="footer-form" action="">
+          <!-- <form class="footer-form" action="">
             <input
               class="footer-input"
               type="text"
               placeholder="Enter Email Addres"
             />
             <button class="footer-btn">Join</button>
-          </form>
+          </form> -->
           <h3>Call Us</h3>
           <a href="phone">+92823098223</a>
           <h3>Email us</h3>
@@ -439,23 +480,23 @@
         <h1 class="wathc-el"><span class="whatch">00</span></h1>
       </div>
     </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
     <script src="app.js"></script>
   </body>
 </html>
