@@ -46,11 +46,27 @@ nav {
   align-items: center;
   justify-content: space-around;
   background-image: linear-gradient(to top, #d9480fbb, rgba(0, 0, 0, 0.863)),
-    url(images/kampala2x.jpg);
+    url(images/travel.jpg);
   background-size: cover;
   color: #fff;
   text-transform: uppercase;
   border-radius: 1rem;
+}
+nav h2 {
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.788),
+    rgba(0, 0, 0, 0.705)
+  );
+  border-radius: 0.2rem;
+  padding: 0 0.3rem;
+  /* background-color: wheat; */
+}
+nav h2 span {
+  font-size: 1.8rem;
+  color: dodgerblue;
 }
 .sticky {
   padding: 2.6rem;
@@ -93,7 +109,7 @@ nav ul li a:hover::after {
 
 .home {
   background-image: linear-gradient(to top, #d9480f9c, rgba(0, 0, 0, 0.671)),
-    url(images/kampala2x.jpg);
+    url(images/travel.jpg);
   height: 90vh;
   background-size: cover;
   /* background-repeat: no-repeat; */
@@ -130,11 +146,11 @@ nav ul li a:hover::after {
 }
 .home-text::after {
   position: absolute;
-  content: "110$";
+  content: "Deg Deg ah";
   color: rgba(0, 128, 0, 0.877);
-  top: -4.3rem;
-  right: -6rem;
-  font-size: 6.2rem;
+  top: -2.4rem;
+  right: 1rem;
+  font-size: 4.2rem;
   font-weight: 900;
 }
 .home-pragraph {
@@ -682,32 +698,52 @@ nav ul li a:hover::after {
 /* contact and map */
 .contact-form {
   /* height: 10rem; */
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* flex-direction: column; */
   align-items: center;
-  width: 100%;
+  /* max-width: 120rem; */
 
-  height: 40rem;
-  border-radius: 0.2rem;
-  background-color: #333;
+  /* height: 40rem; */
+}
+.text-form {
+  /* background-color: #333333d7; */
+  border-radius: 0.1rem;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.text-form h2 {
+  font-size: 4rem;
+  color: rgb(10, 9, 9);
+  text-transform: uppercase;
+  text-align: center;
+  /* margin-top: 3rem; */
 }
 
 #map {
   width: 100%;
   /* background-color: #333; */
-  height: 40rem;
-  flex: 1;
+  /* height: 40rem; */
 
   /* width: 100%; */
 }
+#map img {
+  width: 100%;
+  /* height: 100%; */
+  border-radius: 0.1rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.863) k,
+    rgba(255, 255, 255, 0.884)
+  );
+}
 
 .webform {
-  flex-basis: 40%;
   width: 100%;
   height: 100%;
 
-  background-color: #d9480f;
-  padding: 1.5rem;
+  background-color: #d9480fe1;
+  padding: 3rem;
   /* border-radius: 1rem; */
 }
 .webform form {

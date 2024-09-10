@@ -285,36 +285,36 @@ closeNav.addEventListener("click", function () {
   openNav.classList.toggle("mobileHide");
 });
 
-allsection.forEach((section) => {
-  section.addEventListener("click", function () {
-    nav.style.transform = "translateX(-100%)";
-    closeNav.classList.toggle("mobileHide");
-    openNav.classList.toggle("mobileHide");
-  });
-});
+// allsection.forEach((section) => {
+//   section.addEventListener("click", function () {
+//     nav.style.transform = "translateX(-100%)";
+//     closeNav.classList.toggle("mobileHide");
+//     openNav.classList.toggle("mobileHide");
+//   });
+// });
 
 // map
-if (navigator.geolocation)
-  navigator.geolocation.getCurrentPosition(
-    function (pos) {
-      console.log(pos);
-      const { latitude } = pos.coords;
-      const { longitude } = pos.coords;
-      const coords = [latitude, longitude];
-      console.log(coords);
-      const map = L.map("map").setView(coords, 13);
+// if (navigator.geolocation)
+//   navigator.geolocation.getCurrentPosition(
+//     function (pos) {
+//       console.log(pos);
+//       const { latitude } = pos.coords;
+//       const { longitude } = pos.coords;
+//       const coords = [latitude, longitude];
+//       console.log(coords);
+//       const map = L.map("map").setView(coords, 13);
 
-      L.tileLayer("https://tile.openstreetmap.fr/hot//{z}/{x}/{y}.png", {
-        attribution:
-          '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-      }).addTo(map);
+//       L.tileLayer("https://tile.openstreetmap.fr/hot//{z}/{x}/{y}.png", {
+//         attribution:
+//           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+//       }).addTo(map);
 
-      L.marker(coords)
-        .addTo(map)
-        .bindPopup("A pretty CSS popup.<br> Easily customizable.")
-        .openPopup();
-    },
-    function () {
-      alert("not allowed location");
-    }
-  );
+//       L.marker(coords)
+//         .addTo(map)
+//         .bindPopup("A pretty CSS popup.<br> Easily customizable.")
+//         .openPopup();
+//     },
+//     function () {
+//       alert("not allowed location");
+//     }
+//   );

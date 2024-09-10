@@ -31,7 +31,7 @@
   <body>
     <header>
       <nav class="nav">
-        <h2>Fun Agency</h2>
+        <h2>Fun <span>Agency</span></h2>
         <ul class="nav__ul-link">
           <li><a class="nav--links" href="#home">Home</a></li>
           <li><a class="nav--links" href="#services">Services</a></li>
@@ -49,10 +49,10 @@
       ></ion-icon>
       <div class="home-content sections">
         <!-- <span class="home-text-span">110$</span> -->
-        <h1 class="home-text">Ku hel visaha wadanka Uganda</h1>
+        <h1 class="home-text">Hel vise & ticket</h1>
         <p class="home-pragraph">
-          Fun Agency waa agency kashaqeeya soo saaridda visaha dalka uganda iyo
-          jaridda ticketska wadamada East Africa
+          Fun Agency waa agency kashaqeeya soo saaridda visaha iyo jaridda
+          ticketska wadamada East Africa
         </p>
         <a
           class="btn-home"
@@ -375,29 +375,44 @@
       </div>
     </div>
     <!-- map and conatct form -->
-    <div id="map"></div>
-    <div class="contact-form">
-      <div class="webform">
-        <form action="https://api.web3forms.com/submit" method="POST">
-          <h2>No soodir fariin emailka</h2>
-          <input
-            type="hidden"
-            name="access_key"
-            value="38a04918-220a-46af-b2aa-0c082ae0fb4e"
-          />
 
-          <input type="text" name="name" required placeholder="Magaca" />
-          <input
-            type="text"
-            name="Magalada"
-            required
-            placeholder="Magalada aad Joogtid"
-          />
-          <input type="text" name="Phone" required placeholder="Phone Number" />
-          <input type="email" name="email" required placeholder="Email" />
-          <textarea name="message" placeholder="massageka" required></textarea>
-          <button type="submit">DIR</button>
-        </form>
+    <div class="text-form">
+      <h1 class="title-text ww">No soodir fariin emailka</h1>
+
+      <div class="contact-form sections">
+        <div class="webform">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input
+              type="hidden"
+              name="access_key"
+              value="38a04918-220a-46af-b2aa-0c082ae0fb4e"
+            />
+
+            <input type="text" name="name" required placeholder="Magaca" />
+            <input
+              type="text"
+              name="Magalada"
+              required
+              placeholder="Magalada aad Joogtid"
+            />
+            <input
+              type="text"
+              name="Phone"
+              required
+              placeholder="Phone Number"
+            />
+            <input type="email" name="email" required placeholder="Email" />
+            <textarea
+              name="message"
+              placeholder="massageka"
+              required
+            ></textarea>
+            <button type="submit">DIR</button>
+          </form>
+        </div>
+        <div id="map">
+          <img src="images/email.jpg" alt="" />
+        </div>
       </div>
     </div>
     <!-- footer -->
