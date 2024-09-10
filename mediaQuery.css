@@ -51,6 +51,10 @@ and we will say 600/16 = 37.5em */
     grid-template-columns: repeat(1, 1fr);
     row-gap: 2rem;
   }
+  .contact-form {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
   .container-service {
     grid-template-columns: repeat(1, 1fr);
     max-width: 44rem;
